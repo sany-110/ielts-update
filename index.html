@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Build Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Target Band 8.5 &middot; Aug 11 &rarr; Oct 22, 2026</p>
+    <h1>IELTS Build Plan</h1>
+    <p class="hero-sub">73 days, ~2.5 hrs/day. Every task is logged and checked off here &mdash; your job is to show up and run the reps. Progress saves in this browser automatically.</p>
+
+    <div class="hero-grid">
+      <div class="dial-wrap">
+        <svg width="72" height="72" viewBox="0 0 72 72">
+          <circle cx="36" cy="36" r="30" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="7"/>
+          <circle id="dial-ring" cx="36" cy="36" r="30" fill="none" stroke="#5DA9E9" stroke-width="7"
+            stroke-linecap="round" stroke-dasharray="188.4" stroke-dashoffset="188.4"
+            transform="rotate(-90 36 36)"/>
+          <text id="dial-pct" x="36" y="41" text-anchor="middle" font-family="Space Mono, monospace"
+            font-size="15" font-weight="700" fill="#fff">0%</text>
+        </svg>
+        <div class="dial-label">Tasks<br>completed<b id="dial-count">0 / 0</b></div>
+      </div>
+      <div id="countdown">Days to exam<b id="days-left">--</b></div>
+    </div>
+
+    <div class="phase-track" id="phase-track"></div>
+  </header>
+
+  <div class="toolbar">
+    <button class="today-jump" id="jump-today">&#8594; Jump to today</button>
+    <button class="reset-btn" id="reset-progress">Reset all progress</button>
+  </div>
+
+  <nav class="weeks" id="week-nav"></nav>
+  <p class="week-title" id="week-title"></p>
+  <div id="days-container"></div>
+
+  <footer>Progress is saved locally in this browser (localStorage) &mdash; it stays on this device unless you clear site data.</footer>
+</div>
+
+<script src="schedule.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
